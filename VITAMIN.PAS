@@ -25,7 +25,7 @@ Type
  End;
 
 Const
- Fruits:Array[0..64]of Fruit=(
+ Fruits:Array[0..102]of Fruit=(
   (Nom:'Abricot';
   VitaminA:10;
   VitaminB1:0;
@@ -39,6 +39,34 @@ Const
   VitaminC:15;
   VitaminD:0;
   VitaminE:9;
+  VitaminK:0),
+  (Nom:'Ail';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:16;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:13;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Amande';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:91;
   VitaminK:0),
   (Nom:'Ananas';
   VitaminA:0;
@@ -96,6 +124,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Bardane';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:26;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Bergamote';
   VitaminA:0;
   VitaminB1:0;
@@ -107,6 +149,20 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:75;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Betterave';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:5;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -152,6 +208,34 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Carotte';
+  VitaminA:66;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:5;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:13),
+  (Nom:'C‚leri-rave';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:8;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:11;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:42),
   (Nom:'Cerise';
   VitaminA:0;
   VitaminB1:0;
@@ -163,6 +247,34 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:27;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Chƒtaigne';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:15;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:10;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Chƒtaigne d''eau';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:6;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -233,6 +345,34 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:40;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Echalote';
+  VitaminA:5;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:16;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:11;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'FaŒne';
+  VitaminA:10;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:11;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:8;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -320,6 +460,34 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Graine de s‚same';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:4;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Graine de tournesol';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:100;
+  VitaminK:0),
   (Nom:'Grenade';
   VitaminA:0;
   VitaminB1:0;
@@ -345,6 +513,20 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:41;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Igname';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:11;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -572,6 +754,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Navet';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:16;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Nectarine';
   VitaminA:0;
   VitaminB1:0;
@@ -628,6 +824,76 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Noix du Br‚sil';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:20;
+  VitaminK:0),
+  (Nom:'Noix de cajou';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:15),
+  (Nom:'Noix du ginkgo';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:19;
+  VitaminK:0),
+  (Nom:'Oignon jaune';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:8;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Oignon vert';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:100),
   (Nom:'Orange';
   VitaminA:0;
   VitaminB1:0;
@@ -670,6 +936,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Panais';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:1),
   (Nom:'Papaye';
   VitaminA:8;
   VitaminB1:0;
@@ -695,6 +975,76 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:11;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Patate';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:28;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:6;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Patate blanche';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:25;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:21;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Patate douce';
+  VitaminA:100;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:18;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:37;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Patate rouge';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:20;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:36;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Patate Russet';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:34;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:37;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -726,6 +1076,34 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Pignon';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:00;
+  VitaminD:0;
+  VitaminE:32;
+  VitaminK:23),
+  (Nom:'Pistache';
+  VitaminA:10;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:29;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:27),
   (Nom:'Pitahaya';
   VitaminA:0;
   VitaminB1:0;
@@ -754,6 +1132,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:13),
+  (Nom:'Poireau';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:18),
   (Nom:'Pomelo';
   VitaminA:6;
   VitaminB1:0;
@@ -782,6 +1174,62 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:1),
+  (Nom:'Pomme de terre';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:28;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:6;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Pomme de terre blanche';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:25;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:21;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Pomme de terre rouge';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:20;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:36;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Pomme de terre Russet';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:34;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:37;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Pomme-poire';
   VitaminA:0;
   VitaminB1:0;
@@ -838,6 +1286,48 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:5),
+  (Nom:'Radis';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:15;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Radis noir';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:38;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Radis oriental';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:17;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Raisin';
   VitaminA:0;
   VitaminB1:0;
@@ -891,6 +1381,48 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:7;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Rhizome de lotus';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:11;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:41;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Rutabaga';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:4;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:28;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Salsifis';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:9;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:6;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
