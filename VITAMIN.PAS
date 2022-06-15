@@ -7,7 +7,7 @@
 Program VITAMIN;
 
 Type
- Fruit=Record
+ Aliment=Record
   Nom:String[20];
   VitaminA:Byte;
   VitaminB1:Byte;
@@ -24,8 +24,44 @@ Type
   VitaminK:Byte;
  End;
 
+ VitaminRec=Record
+  Code:String[2];
+  Nom:String[30];
+  FormuleChimique:String[20];
+ End;
+
 Const
- Fruits:Array[0..102]of Fruit=(
+ Vitamins:Array[0..8]of VitaminRec=(
+  (Code:'B1';
+   Nom:'Thiamine';
+   FormuleChimique:'C12H17N4OS'),
+  (Code:'B2';
+   Nom:'Riboflavine';
+   FormuleChimique:'C17H20N4O6'),
+  (Code:'B3';
+   Nom:'Niacine';
+   FormuleChimique:'C6H5NO2'),
+  (Code:'B4';
+   Nom:'Ad‚nine';
+   FormuleChimique:'C5H5N5'),
+  (Code:'B5';
+   Nom:'Acide pantoth‚nique';
+   FormuleChimique:'C9H17NO5'),
+  (Code:'B8';
+   Nom:'Biotine';
+   FormuleChimique:'C10H16N2O3S'),
+  (Code:'B9';
+   Nom:'Acide folique';
+   FormuleChimique:'C19H19N7O6'),
+  (Code:'B12';
+   Nom:'Cobalamine';
+   FormuleChimique:'C72H100CoN18O17P'),
+  (Code:'C';
+   Nom:'Acide ascorbique';
+   FormuleChimique:'C6H8O6')
+  );
+
+ Aliments:Array[0..119]of Aliment=(
   (Nom:'Abricot';
   VitaminA:10;
   VitaminB1:0;
@@ -96,6 +132,20 @@ Const
   VitaminD:0;
   VitaminE:8;
   VitaminK:0),
+  (Nom:'Asperge';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:14;
+  VitaminK:57),
   (Nom:'Baie de goji';
   VitaminA:0;
   VitaminB1:0;
@@ -152,6 +202,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Bette';
+  VitaminA:28;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:28;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:100),
   (Nom:'Betterave';
   VitaminA:0;
   VitaminB1:0;
@@ -208,6 +272,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Cardon';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:2;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Carotte';
   VitaminA:66;
   VitaminB1:0;
@@ -222,6 +300,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:13),
+  (Nom:'C‚leri';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:8;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:8;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:38),
   (Nom:'C‚leri-rave';
   VitaminA:0;
   VitaminB1:0;
@@ -292,6 +384,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Chou-rave';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:6;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:79;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Citron';
   VitaminA:0;
   VitaminB1:0;
@@ -306,6 +412,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Coeur de palmier';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:44;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Coing';
   VitaminA:0;
   VitaminB1:0;
@@ -317,6 +437,20 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:23;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Crosse de fougŠre';
+  VitaminA:17;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:30;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -362,6 +496,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Epinard';
+  VitaminA:100;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:100),
   (Nom:'FaŒne';
   VitaminA:10;
   VitaminB1:0;
@@ -387,6 +535,20 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:34;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Fenouil';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:9;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -558,6 +720,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Jicama';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:24;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Jujube';
   VitaminA:0;
   VitaminB1:0;
@@ -656,6 +832,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Malanga';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:9;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Mandarine';
   VitaminA:0;
   VitaminB1:0;
@@ -695,6 +885,20 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:5;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Manioc';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:34;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -866,6 +1070,20 @@ Const
   VitaminD:0;
   VitaminE:19;
   VitaminK:0),
+  (Nom:'Nopal';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:5),
   (Nom:'Oignon jaune';
   VitaminA:0;
   VitaminB1:0;
@@ -1076,6 +1294,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Physalis';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:14;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
   (Nom:'Pignon';
   VitaminA:0;
   VitaminB1:0;
@@ -1258,7 +1490,7 @@ Const
   VitaminD:0;
   VitaminE:2;
   VitaminK:0),
-  (Nom:'Physalis';
+  (Nom:'Pousse de bambou';
   VitaminA:0;
   VitaminB1:0;
   VitaminB2:0;
@@ -1268,9 +1500,9 @@ Const
   VitaminB8:0;
   VitaminB9:0;
   VitaminB12:0;
-  VitaminC:14;
+  VitaminC:0;
   VitaminD:0;
-  VitaminE:0;
+  VitaminE:4;
   VitaminK:0),
   (Nom:'Prune';
   VitaminA:0;
@@ -1398,6 +1630,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Rhubarbe';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:7;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:19),
   (Nom:'Rutabaga';
   VitaminA:0;
   VitaminB1:0;
@@ -1409,6 +1655,20 @@ Const
   VitaminB9:0;
   VitaminB12:0;
   VitaminC:28;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:0),
+  (Nom:'Salicorne';
+  VitaminA:36;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:13;
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
@@ -1467,6 +1727,20 @@ Const
   VitaminC:50;
   VitaminD:0;
   VitaminE:21;
+  VitaminK:0),
+  (Nom:'Taro';
+  VitaminA:0;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:13;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:20;
+  VitaminD:0;
+  VitaminE:0;
   VitaminK:0)
  );
 
@@ -1475,6 +1749,7 @@ Var
  I:Byte;
 Begin
  For I:=1 to Length(S)do Begin
+  If S[I]in['‚','Š','ˆ',#233]Then S[I]:='E'Else
   If S[I] in['a'..'z']Then S[I]:=Chr(Ord(S[I])-32);
  End;
  StrToUpper:=S;
@@ -1499,74 +1774,79 @@ BEGIN
  If ParamCount>0Then Begin
   For I:=1 to ParamCount do Begin
    If StrToUpper(ParamStr(I))='A'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminA<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminA<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B1'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB1<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB1<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B2'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB2<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB2<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B3'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB3<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB3<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B5'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB5<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB5<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B6'Then Begin
-     For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB6<>0)Then WriteLn(Fruits[J].Nom);
+     For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB6<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B8'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB8<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB8<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B9'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB9<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB9<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='B12'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminB12<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminB12<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='C'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminC<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminC<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='D'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminD<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminD<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='E'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminE<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminE<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
    If StrToUpper(ParamStr(I))='K'Then Begin
-    For J:=Low(Fruits) to High(Fruits)do If(Fruits[J].VitaminK<>0)Then WriteLn(Fruits[J].Nom);
+    For J:=Low(Aliments) to High(Aliments)do If(Aliments[J].VitaminK<>0)Then WriteLn(Aliments[J].Nom);
    End
     Else
-   For J:=Low(Fruits) to High(Fruits)do Begin
-    If StrToUpper(ParamStr(I))=StrToUpper(Fruits[J].Nom)Then Begin
-     WriteLn('Le ',Fruits[J].Nom,' contient les proportions de vitamines suivantes :');
+   For J:=Low(Aliments) to High(Aliments)do Begin
+    If StrToUpper(ParamStr(I))=StrToUpper(Aliments[J].Nom)Then Begin
+     If UpCase(Aliments[J].Nom[1])in['A','E','I','O','Y']Then Begin
+      Write('L''');
+     End
+      Else
+     Write('Le ');
+     WriteLn(Aliments[J].Nom,' contient les proportions de vitamines suivantes :');
      WriteLn;
-     If Fruits[J].VitaminA<>0Then WriteLn(Fruits[J].VitaminA,'% de vitamine A');
-     If Fruits[J].VitaminB1<>0Then WriteLn(Fruits[J].VitaminB1,'% de vitamine B1');
-     If Fruits[J].VitaminB2<>0Then WriteLn(Fruits[J].VitaminB2,'% de vitamine B2');
-     If Fruits[J].VitaminB3<>0Then WriteLn(Fruits[J].VitaminB3,'% de vitamine B3');
-     If Fruits[J].VitaminB5<>0Then WriteLn(Fruits[J].VitaminB5,'% de vitamine B5');
-     If Fruits[J].VitaminB6<>0Then WriteLn(Fruits[J].VitaminB6,'% de vitamine B6');
-     If Fruits[J].VitaminB8<>0Then WriteLn(Fruits[J].VitaminB8,'% de vitamine B8');
-     If Fruits[J].VitaminB9<>0Then WriteLn(Fruits[J].VitaminB9,'% de vitamine B9');
-     If Fruits[J].VitaminB12<>0Then WriteLn(Fruits[J].VitaminB12,'% de vitamine B12');
-     If Fruits[J].VitaminC<>0Then WriteLn(Fruits[J].VitaminC,'% de vitamine C');
-     If Fruits[J].VitaminD<>0Then WriteLn(Fruits[J].VitaminD,'% de vitamine D');
-     If Fruits[J].VitaminE<>0Then WriteLn(Fruits[J].VitaminE,'% de vitamine E');
-     If Fruits[J].VitaminK<>0Then WriteLn(Fruits[J].VitaminK,'% de vitamine K');
+     If Aliments[J].VitaminA<>0Then WriteLn(Aliments[J].VitaminA,'% de vitamine A');
+     If Aliments[J].VitaminB1<>0Then WriteLn(Aliments[J].VitaminB1,'% de vitamine B1');
+     If Aliments[J].VitaminB2<>0Then WriteLn(Aliments[J].VitaminB2,'% de vitamine B2');
+     If Aliments[J].VitaminB3<>0Then WriteLn(Aliments[J].VitaminB3,'% de vitamine B3');
+     If Aliments[J].VitaminB5<>0Then WriteLn(Aliments[J].VitaminB5,'% de vitamine B5');
+     If Aliments[J].VitaminB6<>0Then WriteLn(Aliments[J].VitaminB6,'% de vitamine B6');
+     If Aliments[J].VitaminB8<>0Then WriteLn(Aliments[J].VitaminB8,'% de vitamine B8');
+     If Aliments[J].VitaminB9<>0Then WriteLn(Aliments[J].VitaminB9,'% de vitamine B9');
+     If Aliments[J].VitaminB12<>0Then WriteLn(Aliments[J].VitaminB12,'% de vitamine B12');
+     If Aliments[J].VitaminC<>0Then WriteLn(Aliments[J].VitaminC,'% de vitamine C');
+     If Aliments[J].VitaminD<>0Then WriteLn(Aliments[J].VitaminD,'% de vitamine D');
+     If Aliments[J].VitaminE<>0Then WriteLn(Aliments[J].VitaminE,'% de vitamine E');
+     If Aliments[J].VitaminK<>0Then WriteLn(Aliments[J].VitaminK,'% de vitamine K');
      WriteLn;
     End;
    End;
