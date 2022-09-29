@@ -67,7 +67,7 @@ BEGIN
    (ParamStr(1)='/h')or(ParamStr(1)='/H')Then Begin
   WriteLn('SELLES : Cette commande permet d''indiquer ',
                    ' la couleur … laquelle certains aliments sortes ou ',
-                   'que signifie la couleur d''un seul');
+                   'que signifie la couleur d''un selle');
   WriteLn;
   WriteLn('Syntaxe : SELLES couleur');
   WriteLn('          SELLES aliment');
