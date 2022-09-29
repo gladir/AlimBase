@@ -15,6 +15,10 @@ Voici la liste des différents fichiers proposés dans AlimBase :
 		<td>Cette commande permet de détecter les aliments mentionné dans un texte.</td>
 	</tr>
 	<tr>
+		<td><b>SELLES.PAS</b></td>
+		<td>Cette commande permet d'indiquer la couleur à laquelle sortes certains aliments sortes ou que signifie la couleur d'un selle.</td> 
+	</tr>
+	<tr>
 		<td><b>VITAMIN.PAS</b></td>
 		<td>Cette commande permet d'indiquer les vitamines que contient un fruit.</td>
 	</tr>
