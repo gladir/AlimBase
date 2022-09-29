@@ -61,7 +61,7 @@ Const
    FormuleChimique:'C6H8O6')
   );
 
- Aliments:Array[0..119]of Aliment=(
+ Aliments:Array[0..120]of Aliment=(
   (Nom:'Abricot';
   VitaminA:10;
   VitaminB1:0;
@@ -790,6 +790,20 @@ Const
   VitaminD:0;
   VitaminE:0;
   VitaminK:0),
+  (Nom:'Laitue Boston';
+  VitaminA:10;
+  VitaminB1:0;
+  VitaminB2:0;
+  VitaminB3:0;
+  VitaminB5:0;
+  VitaminB6:0;
+  VitaminB8:0;
+  VitaminB9:0;
+  VitaminB12:0;
+  VitaminC:0;
+  VitaminD:0;
+  VitaminE:0;
+  VitaminK:74),
   (Nom:'Lime';
   VitaminA:0;
   VitaminB1:0;
