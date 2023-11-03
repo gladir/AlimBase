@@ -1,5 +1,5 @@
 # AlimBase
-Liste de commande écrit en Pascal sur les bases alimentaires.
+Liste de commandes écrit en Pascal sur les bases alimentaires.
 
 <h2>Liste des fichiers</h2>
 
