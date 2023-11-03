@@ -1,5 +1,5 @@
 # AlimBase
-Liste de commande écrit en Pascal sur les bases alimentaires.
+Liste de commandes écrit en Pascal sur les bases alimentaires.
 
 <h2>Liste des fichiers</h2>
 
@@ -17,6 +17,10 @@ Voici la liste des différents fichiers proposés dans AlimBase :
 	<tr>
 		<td><b>FINDFOOD.PAS</b></td>
 		<td>Cette commande permet de détecter les aliments mentionné dans un texte.</td>
+	</tr>
+	<tr>
+		<td><b>FINDRECI.PAS</b></td>
+		<td>Cette commande permet de détecter les recettes mentionné dans un texte.</td>
 	</tr>
 	<tr>
 		<td><b>LITER.PAS</b></td>
