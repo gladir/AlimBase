@@ -11,6 +11,10 @@ Voici la liste des différents fichiers proposés dans AlimBase :
 		<th>Description</th>	
 	</tr>
 	<tr>
+		<td><b>CUP.PAS</b></td>
+		<td>Cette commande permet de convertir une unité de mesure de tasse en son équivalent.</td>
+	</tr>
+	<tr>
 		<td><b>FINDFOOD.PAS</b></td>
 		<td>Cette commande permet de détecter les aliments mentionné dans un texte.</td>
 	</tr>
