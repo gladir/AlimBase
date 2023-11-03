@@ -42,10 +42,10 @@ BEGIN
   WriteLn(Value:0:2,' tasse = ',Value*250:0:2,' millilitre (ml)');
 
   If Frac(Value)=0.0 Then Begin
-   WriteLn(Value:0:0,' tasse = ',Value*61.023744:0:6,' pouce cube (cu in)');
+   WriteLn(Value:0:0,' tasse = ',Value*61.023744/4:0:6,' pouce cube (cu in)');
   End
    Else
-  WriteLn(Value:0:2,' tasse = ',Value*61.023744:0:2,' pouce cube (cu in)');
+  WriteLn(Value:0:2,' tasse = ',Value*61.023744/4:0:2,' pouce cube (cu in)');
 
   If Frac(Value)=0.0 Then Begin
    WriteLn(Value:0:0,' tasse = ',Value*50.0:0:6,' cuillŠre … caf‚');
