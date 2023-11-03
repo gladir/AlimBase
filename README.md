@@ -27,6 +27,10 @@ Voici la liste des différents fichiers proposés dans AlimBase :
 		<td>Cette commande permet de convertir une unité de mesure de litre en son équivalent.</td>
 	</tr>
 	<tr>
+		<td><b>RECIPE.PAS</b></td>
+		<td>Cette commande permet d'afficher une recette.</td>
+	</tr>
+	<tr>
 		<td><b>SELLES.PAS</b></td>
 		<td>Cette commande permet d'indiquer la couleur à laquelle sortes certains aliments sortes ou que signifie la couleur d'un selle.</td> 
 	</tr>
