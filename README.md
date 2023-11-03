@@ -19,6 +19,10 @@ Voici la liste des différents fichiers proposés dans AlimBase :
 		<td>Cette commande permet de détecter les aliments mentionné dans un texte.</td>
 	</tr>
 	<tr>
+		<td><b>FINDRECI.PAS</b></td>
+		<td>Cette commande permet de détecter les recettes mentionné dans un texte.</td>
+	</tr>
+	<tr>
 		<td><b>LITER.PAS</b></td>
 		<td>Cette commande permet de convertir une unité de mesure de litre en son équivalent.</td>
 	</tr>
