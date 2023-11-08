@@ -11,6 +11,10 @@ Voici la liste des différents fichiers proposés dans AlimBase :
 		<th>Description</th>	
 	</tr>
 	<tr>
+		<td><b>CALAGRIC.PAS</b></td>
+		<td>Cette commande permet d'afficher un calendrier agricole.</td>
+	</tr>
+	<tr>
 		<td><b>CUP.PAS</b></td>
 		<td>Cette commande permet de convertir une unité de mesure de tasse en son équivalent.</td>
 	</tr>
