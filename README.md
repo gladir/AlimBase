@@ -11,6 +11,10 @@ Voici la liste des différents fichiers proposés dans AlimBase :
 		<th>Description</th>	
 	</tr>
 	<tr>
+		<td><b>BISTROL.PAS</b></td>
+		<td>Cette commande permet d'afficher un graphique basé sur les données d'un fichier avec l'échelle de Bistrol.</td>
+	</tr>
+	<tr>
 		<td><b>CALAGRIC.PAS</b></td>
 		<td>Cette commande permet d'afficher un calendrier agricole.</td>
 	</tr>
