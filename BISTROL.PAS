@@ -23,6 +23,7 @@ Var
  DateArray:Array[0..365]of DateTime;
  TypeArray:Array[0..365]of Byte;
  NumRecord:Integer;
+ TypeCount:Array[1..7]of Integer;
 
 Function StrToUpper(S:String):String;
 Var
@@ -167,6 +168,7 @@ BEGIN
    OutTextXY(0,30,'chantillion de donn‚es du fichier ®'+FileName+'¯');
    WidthBar:=575 div NumRecord;
    X:=0;NextX:=0;
+   FillChar(TypeCount,SizeOf(TypeCount),0);
    For I:=0 to NumRecord-1 do Begin
     Case I and 1 of
      0:SetFillStyle(SolidFill,LightGray);
@@ -175,11 +177,15 @@ BEGIN
     Bar(X,(HeightScreen-1)-TypeArray[I]*55,X+WidthBar-1,HeightScreen-1-20);
     If X>=NextX Then Begin
      OutTextXY(X,(HeightScreen-1)-10,DateToString(DateArray[I]));
-     NextX:=NextX+TextHeight(DateToString(DateArray[I])+' ');
+     NextX:=NextX+TextWidth(DateToString(DateArray[I]));
     End;
     Inc(X,WidthBar);
+    Inc(TypeCount[TypeArray[I]]);
    End;
-   For I:=0 to 6 do OutTextXY(580,(HeightScreen-1)-20-(I*55)-TextHeight('Type'),'Type '+IntToStr(I+1));
+   For I:=0 to 6 do Begin
+    OutTextXY(580,(HeightScreen-1)-20-(I*55)-TextHeight('Type')*2,'Type '+IntToStr(I+1));
+    OutTextXY(580,(HeightScreen-1)-20-(I*55),IntToStr(Trunc((TypeCount[I+1]/NumRecord)*100))+'%');
+   End;
    ReadKey;
   End
    Else
